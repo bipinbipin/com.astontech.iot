@@ -8,6 +8,6 @@ public class HelloRest {
 
     @GetMapping("/api/hi")
     public String helloWorld() {
-        return "H3!!0 W()R!D     -   002";
+        return "H3!!0 W()R!D     -   003";
     }
 }
