@@ -12,7 +12,7 @@ public class HelloRest {
 
     @GetMapping("/api/hi")
     public String helloWorld() {
-        return "H3!!0 W()R!D     -   004";
+        return "H3!!0 W()R!D     -   005";
     }
 
     @PostMapping("/api/led/")
