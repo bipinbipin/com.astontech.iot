@@ -19,7 +19,7 @@ public class HelloRest {
     public String toggleLed() {
         if(pin==null) {
             GpioController gpio = GpioFactory.getInstance();
-            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_16, "LED 01", PinState.LOW);
+            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_23, "LED 01", PinState.LOW);
         }
         pin.toggle();
         return "Light Toggled!";
