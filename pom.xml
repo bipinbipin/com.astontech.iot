@@ -35,6 +35,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.pi4j</groupId>
+			<artifactId>pi4j-distribution</artifactId>
+			<version>1.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>
