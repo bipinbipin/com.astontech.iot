@@ -12,14 +12,14 @@ public class HelloRest {
 
     @GetMapping("/api/hi")
     public String helloWorld() {
-        return "H3!!0 W()R!D     -   005";
+        return "H3!!0 W()R!D     -   006";
     }
 
     @PostMapping("/api/led/")
     public String toggleLed() {
         if(pin==null) {
             GpioController gpio = GpioFactory.getInstance();
-            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_23, "LED 01", PinState.LOW);
+            pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_04, "LED 01", PinState.LOW);
         }
         pin.toggle();
         return "Light Toggled!";
